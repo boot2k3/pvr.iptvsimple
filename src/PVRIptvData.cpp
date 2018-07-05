@@ -482,7 +482,7 @@ bool PVRIptvData::LoadPlayList(void)
                 strLine.c_str(), tmpChannel.strChannelName.c_str());
 
       if (bIsRealTime)
-        tmpChannel.properties.insert({PVR_STREAM_PROPERTY_ISREALTIMESTREAM, "true"});
+        tmpChannel.properties.insert({PVR_STREAM_PROPERTY_ISREALTIMESTREAM, "false"});
 
       PVRIptvChannel channel;
       channel.iUniqueId         = GetChannelId(tmpChannel.strChannelName.c_str(), strLine.c_str());
